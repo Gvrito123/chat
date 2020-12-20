@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header></header>
+  <div class="content">
+    <div id="chat-open">
+      <div class="profile">
+        <div class="profile-pic">
+          <div class="profile-pic-img">
+            <div class="profile-pic-activity"></div>
+          </div>
+          <span id="dropdown">&or;</span>
+          <span id="dropup">&and;</span>
+          <div id="profile-pic-active"></div>
+        </div>
+        <span id="x-button">X</span>
+        <div class="chat-name">
+          <p id="chat-person-name">Giorgi Gvritishvili</p>
+          <p id="chat-person-activity">Active Now</p>
+        </div>
+        <div class="dropdown-menu">
+          <ul id="dropdown-ul">
+            <li>
+              <span id="searchShow">Search</span>
+              <span id="searchHide">Hide Search</span>
+              <input type="text" name="Search" id="searchField" placeholder="Search..."> 
+            </li>
+            <li>Test Item</li>
+            <li>Test Item</li>
+            <li>Test Item</li>
+            <li>Test Item</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chat-content">
+      </div>
+      <div class="chat-message">
+        <div class="chat-icons">
+          <div class="chat-icon first-icon"></div>
+          <div class="chat-icon second-icon"></div>
+          <div class="chat-icon third-icon"></div>
+        </div>
+        <div class="chat-message-input">
+          <input type="text" name="message" id="messageField" placeholder="Aa">
+        </div>
+        <div class="chat-message-send">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" id="sendBtn"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+        </div>
+      </div>
+    </div>
+    <div id="chat-closed">
+      <div class="chat-closed-content">
+        <div class="chat-closed-active">
+          <div class="chat-closed-active-pic">
+            <div id="chat-closed-activity"></div>
+          </div>
+        </div>
+        <div class="chat-closed-text">
+          <p id="chat-closed-paragraph">Chat with us</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="chat.js"></script>
+<script src="chatfunct.js"></script>
+</html>
