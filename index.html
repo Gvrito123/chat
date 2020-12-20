@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
+  <title>Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,8 @@
           <div class="profile-pic-img">
             <div class="profile-pic-activity"></div>
           </div>
-          <span id="dropdown">&or;</span>
-          <span id="dropup">&and;</span>
+          <span id="dropdown">...</span>
+          <span id="dropup">...</span>
           <div id="profile-pic-active"></div>
         </div>
         <span id="x-button">X</span>
@@ -31,10 +31,18 @@
               <span id="searchHide">Hide Search</span>
               <input type="text" name="Search" id="searchField" placeholder="Search..."> 
             </li>
-            <li>Test Item</li>
-            <li>Test Item</li>
-            <li>Test Item</li>
-            <li>Test Item</li>
+            <li>
+              <span id="clear">Delete Conversation</span>
+            </li>
+            <li id="confirmation-li">
+              <span id="confirmation">Are You Sure?</span>
+            </li>
+            <li id="optionYes">
+              <span id="accept">Yes</span>
+            </li>
+            <li id="optionNo">
+              <span id="decline">No</span>
+            </li>
           </ul>
           <div id="search-results">
           </div>
