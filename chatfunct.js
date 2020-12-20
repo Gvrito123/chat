@@ -1,6 +1,8 @@
 const chatBody = document.getElementsByClassName('chat-content')[0];
 const msgBody = document.getElementById('messageField');
 const sendBtn = document.getElementById('sendBtn');
+const searchResults = document.getElementById('search-results');
+const searchedMsg = searchResults.getElementsByClassName('message')
 
 class Messages {
     db = new Map();
@@ -65,6 +67,26 @@ msgBody.onkeypress = (event) => {
 searchBar.onkeypress = (event) => {
     if(event.keyCode === 13) {
         let searchResult = messages.searchMsg(searchBar.value);
-        searchBar.value = null;
+        if(searchResult == null) {
+            searchBar.style.border = '1px solid red';
+        }else {
+            searchResults.style.display = 'block';
+            for(let value of searchResult) {
+                let msg = value.text;
+                let msgBln = document.createElement('span');
+                let msgText = document.createTextNode(`${msg}`);
+                let breakLine = document.createElement('br');
+                msgBln.appendChild(msgText);
+                msgBln.className = 'message';
+                msgBln.id = `messageFound${msg.id}`;
+                searchResults.appendChild(msgBln);
+                searchResults.appendChild(breakLine);
+            }
+            for(let msgBox in searchedMsg) {
+                msgBox.addEventListener('click', ()=> {
+                    let origMsg = chatBody.getElementById(``)
+                })
+            }
+        }
     }
 }

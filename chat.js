@@ -24,7 +24,7 @@ const closeChat = () => {
 }
 
 const dropMenuDown = () => {
-    dropMenu.style.display = 'block';
+    dropMenu.style.display = 'flex';
     dropMenu.style.animation = 'chatOpen 1s';
     dropdBtn.style.display = 'none';
     dropuBtn.style.display = 'inline';
@@ -42,7 +42,7 @@ const dropMenuUp = () => {
 const showSearchField = () => {
     searchBar.style.animation = 'chatOpen 1s';
     list.style.animation = 'chatOpen 1s';
-    searchBar.style.display = 'inline-block';
+    searchBar.style.display = 'block';
     searchShowBtn.style.display = 'none'
     searchHideBtn.style.display = 'inline'
 }
